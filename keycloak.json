@@ -1,0 +1,7 @@
+{
+  "realm": "WebWallet",
+  "auth-server-url": "https://mydrone.at:10443/auth",
+  "ssl-required": "external",
+  "resource": "login",
+  "public-client": true
+}

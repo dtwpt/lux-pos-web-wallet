@@ -1,0 +1,1 @@
+Lux PoS Web Wallet

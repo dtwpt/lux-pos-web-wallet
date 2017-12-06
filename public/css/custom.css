@@ -1,0 +1,44 @@
+
+.navbar-left{
+    margin-left:0!important;
+}
+
+body {
+    padding-top: 60px;
+}
+@media (min-width: 992px) {
+    body {
+        padding-top: 60px;
+    }
+}
+
+.navbar-right{
+    color: rgba(255,255,255,.5);
+}
+
+.table td {
+    max-width: 0;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+#col1{
+    width:20%;
+}
+#col2{
+    width:10%;
+}
+#col3{
+    width:15%;
+}
+#col4{
+    width:20%;
+}
+#col5{
+    width:35%;
+}
+
+[v-cloak] { display:none; }

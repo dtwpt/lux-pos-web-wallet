@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Bootstrap -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="../css/custom.css" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+<div class="mainContainer" v-cloak>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <router-link to="/" class="navbar-brand">Lux Web Wallet</router-link>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto navbar-left">
+                    <li class="nav-item">
+                        <router-link to="/" class="nav-link">Dashboard</router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/addresses" class="nav-link">Addresses</router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/send" class="nav-link">Send</router-link>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto navbar-right">
+                    <li><a>{{username}} | </a><a href="/logout"><span class="fa fa-sign-out"></span> Logout</a></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+            <!-- nutze <router-link> zur Navigation -->
+            <!-- gib den Link mit der `to`-Prop an -->
+            <!-- <router-link> wird standardmäßig als <a> gerendert-->
+
+            <!-- Route-Outlet (zu deutsch soviel wie: "Ausgang") -->
+            <!-- die der Route zugeordnete Komponente wird hier gerendert-->
+            <router-view></router-view>
+
+</div>
+
+
+
+
+<!-- Bootstrap -->
+<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+<script src="./bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/router_bundle.js"></script>
+
+<body>
+</html>
